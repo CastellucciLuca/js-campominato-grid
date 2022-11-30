@@ -13,9 +13,13 @@ footer{
 
 div div.box{
     width: calc(100% / 10);
+    height: calc(100% / 10);
     background-color: azure;
     border: 2px solid black;
     text-align: center;
+}
+div div.box.bgCarino{
+    background-color: red;
 }
 .custom-align-center{
     align-items: center;
@@ -27,3 +31,4 @@ div div.box{
     height: 600px;
     width: 600px;
 }
+

@@ -6,7 +6,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 const campoMinato = document.getElementById('campoMinato');
 
 //Funzione con cui creo elementi (square) nell'html
-function getElementDiv (contentText,playground) {
+function getElementDiv (contentText,playground,printNumber) {
     let createdElement = document.createElement('div');
     // TESTO = ARGOMENTO INSERITO
     createdElement.innerText = contentText;
@@ -15,7 +15,8 @@ function getElementDiv (contentText,playground) {
     // APPENDO ARGOMENTO ALLA VARIABILE (campoMinato)
     playground.append(createdElement);
     createdElement.addEventListener ('click', function() {
-        createdElement.classList.toggle('bgAlternativo');
+        createdElement.classList.toggle('bgCarino');
+        console.log(printNumber)
     })
     return createdElement;
 }
