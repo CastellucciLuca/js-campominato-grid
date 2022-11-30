@@ -14,11 +14,19 @@ function getElementDiv (contentText,playground) {
     createdElement.classList.add('box', 'p-2');
     // APPENDO ARGOMENTO ALLA VARIABILE (campoMinato)
     playground.append(createdElement);
+    createdElement.addEventListener ('click', function() {
+        createdElement.classList.toggle('bgAlternativo');
+    })
     return createdElement;
 }
 //Variabile con id #play
-let play = document.getElementById('play')
+let play = document.getElementById('play');
+// START CAMPOMINATO
+play.addEventListener ('click', function() {
+    // SVUOTO IL FOGLIO PRIMA DI FAR STARTARE IL CAMPOMINATO
+    campoMinato.innerHTML = '';
 // CICLO FOR PER CREARE 100 BOX
 for ( let i = 1 ; i < 101 ; i++) {
-    getElementDiv(i);
+    getElementDiv(i, campoMinato);
 }
+});
