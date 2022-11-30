@@ -1,19 +1,19 @@
 header{
     height: 120px;
 }
+
 main{
     background-color: #7fffd4;
     height: calc(100vh - 220px);
 }
+
 footer{
     height: 100px;
 }
 
-div p {
-    height: 40px;
-    width: 40px;
-    background-color: blue;
-}
 div div.box{
-    
+    width: calc(100% / 10);
+    background-color: azure;
+    border: 2px solid black;
+    text-align: center;
 }
