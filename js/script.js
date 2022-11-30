@@ -6,14 +6,14 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 const campoMinato = document.getElementById('campoMinato');
 
 //Funzione con cui creo elementi (square) nell'html
-function getElementDiv (contentText) {
+function getElementDiv (contentText,playground) {
     let createdElement = document.createElement('div');
     // TESTO = ARGOMENTO INSERITO
     createdElement.innerText = contentText;
     // CLASSE CASELLA
     createdElement.classList.add('box', 'p-2');
     // APPENDO ARGOMENTO ALLA VARIABILE (campoMinato)
-    campoMinato.append(createdElement);
+    playground.append(createdElement);
     return createdElement;
 }
 //Variabile con id #play
