@@ -17,3 +17,10 @@ div div.box{
     border: 2px solid black;
     text-align: center;
 }
+.custom-align-center{
+    align-items: center;
+}
+#campoMinato{
+    height: 600px;
+    width: 600px;
+}
