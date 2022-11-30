@@ -16,6 +16,8 @@ function getElementDiv (contentText) {
     campoMinato.append(createdElement);
     return createdElement;
 }
+//Variabile con id #play
+let play = document.getElementById('play')
 // CICLO FOR PER CREARE 100 BOX
 for ( let i = 1 ; i < 101 ; i++) {
     getElementDiv(i);

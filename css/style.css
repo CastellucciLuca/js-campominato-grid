@@ -20,6 +20,9 @@ div div.box{
 .custom-align-center{
     align-items: center;
 }
+#boolean-logo{
+    height: 70px;
+}
 #campoMinato{
     height: 600px;
     width: 600px;
