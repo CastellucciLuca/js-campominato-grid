@@ -28,6 +28,6 @@ play.addEventListener ('click', function() {
     campoMinato.innerHTML = '';
 // CICLO FOR PER CREARE 100 BOX
 for ( let i = 1 ; i < 101 ; i++) {
-    getElementDiv(i, campoMinato);
+    getElementDiv(i, campoMinato, i);
 }
 });
